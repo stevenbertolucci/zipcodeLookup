@@ -20,3 +20,9 @@ Needed for navigation
 
 Needed to run the React App
 
+## What this App Does
+
+This microservice app looks up the city of the user and it returns a JSON object of the user's location. I wrote code to display the City, State, and Zipcode on the screen for testing purposes. 
+
+This app will be on different port than The Directory so that it can be running 99.99% of the time, listening for request from users. 
+
