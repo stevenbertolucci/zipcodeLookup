@@ -26,3 +26,7 @@ This microservice app looks up the city of the user and it returns a JSON object
 
 This app will be on different port than The Directory so that it can be running 99.99% of the time, listening for request from users. 
 
+## Which files to use?
+
+The code for the zip code lookup will be in the file: searchZipCode.js
+
