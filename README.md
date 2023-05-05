@@ -18,4 +18,6 @@ Needed for navigation
 
 ### `npm install react-scripts`
 
+Needed to run the React App
+
 ### `npm run build` fails to minify
