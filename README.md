@@ -28,5 +28,5 @@ This app will be on different port than The Directory so that it can be running 
 
 ## Which files to use?
 
-The code for the zip code lookup will be in the file: searchZipCode.js
+The code for the zip code lookup will be in /src folder and the file is: searchZipCode.js
 
