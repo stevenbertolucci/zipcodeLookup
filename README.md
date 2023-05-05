@@ -20,4 +20,3 @@ Needed for navigation
 
 Needed to run the React App
 
-### `npm run build` fails to minify
