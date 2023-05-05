@@ -7,12 +7,13 @@ export default function SearchZipCode() {
       alert("Please enter a city.")
     }
 
+    // Waits for user to send City Info
     const searchZipCode = async (e) => {
         e.preventDefault();
         console.log("Submitting the Form");
         setQuery(e.target.thecity)
 
-
+        // Displays city info
         getLocation({city: `${query}`})
         .then((jsonResult => {
             console.log('Asynchronous "then" result:', jsonResult);
@@ -39,6 +40,7 @@ export default function SearchZipCode() {
     }
       };
 
+      // Display the output for testing  
   return (
     <>
         <form className="form" onSubmit={searchZipCode}> 
