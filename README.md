@@ -87,7 +87,6 @@ In the complete code above, the `getLocation()` function sends the geolocation o
 ```
 ## Example Code to Display the Response
 ```JS
-// Display the output for testing  
   return (
     <>
         <form className="form" onSubmit={searchZipCode}> 
@@ -114,5 +113,3 @@ In the complete code above, the `getLocation()` function sends the geolocation o
 
 ## UML Diagram
 ![UML Diagram](https://user-images.githubusercontent.com/13703308/236877383-c2a2fdf7-7b51-4d1d-b9f6-94c472b8c0c0.png)
-
-
