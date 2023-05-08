@@ -87,6 +87,18 @@ In the complete code above, the `getLocation()` function sends the geolocation o
 ```
 ## Example Code to Display the Response
 ```JS
+const searchZipCode = async (e) => {
+        e.preventDefault();
+        console.log("Submitting the Form");
+        setQuery(e.target.thecity)
+
+        getLocation({city: `${query}`})
+        .then((jsonResult => {
+            console.log('Asynchronous "then" result:', jsonResult);
+        })
+        .catch(function(error) {
+            console.error('Asynchronous "then" error:', error);
+        }));
   return (
     <>
         <form className="form" onSubmit={searchZipCode}> 
