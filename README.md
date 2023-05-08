@@ -31,3 +31,7 @@ This app will be on different port than The Directory so that it can be running 
 The code for the zip code lookup will be in /src folder and the file is: searchZipCode.js
 You may edit the html code to get rid of it or change it. Feel free to do whatever you desire. 
 
+## UML Diagram
+![UML Diagram](https://user-images.githubusercontent.com/13703308/236877383-c2a2fdf7-7b51-4d1d-b9f6-94c472b8c0c0.png)
+
+
