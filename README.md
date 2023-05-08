@@ -85,6 +85,32 @@ In the complete code above, the `getLocation()` function sends the geolocation o
       ...
 }
 ```
+## Example Code to Display the Response
+```JS
+// Display the output for testing  
+  return (
+    <>
+        <form className="form" onSubmit={searchZipCode}> 
+        <label className="label" htmlFor="query"> 
+          {" "}
+          City:
+        </label>
+        
+        <button 
+          type="submit" 
+          name="thecity"
+          className="button"
+          value={query}
+          onClick={(e) => setQuery(e.target.value)}>
+          Search
+        </button>
+      </form>
+      <p className="App-p">{query.city}</p>
+      <p className="App-p">{query.principalSubdivision}</p>
+      <p className="App-p">{query.postcode}</p>
+    </>
+  );
+```
 
 ## UML Diagram
 ![UML Diagram](https://user-images.githubusercontent.com/13703308/236877383-c2a2fdf7-7b51-4d1d-b9f6-94c472b8c0c0.png)
