@@ -34,7 +34,7 @@ You may edit the html code to get rid of it or change it. Feel free to do whatev
 ## How to REQUEST Data
 Since I written this app using React, requesting data is very simple by using the fetch method to request data from the backend server, which is from Big Data Cloud API. 
 
-The URL that I used is: https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en
+The URL that I used is: `https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en`
 
 The code to fetch data from Big Data Cloud API is: 
 async function getLocation() {
