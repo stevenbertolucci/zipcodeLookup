@@ -37,7 +37,7 @@ Since I written this app using React, requesting data is very simple by using th
 The URL that I used is: `https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en`
 
 The code to fetch data from Big Data Cloud API is: 
-```
+```JS
 async function getLocation() {
         const response = await fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en")
         const jsonData = await response.json()
