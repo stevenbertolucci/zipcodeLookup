@@ -60,7 +60,7 @@ async function getLocation() {
 ```
 In the complete code above, the `getLocation()` function sends the geolocation of the user to the Big Data Cloud backend then the backend will, if successful, send the requested data back to you. On success, the response will be saved in JSON to the variable `jsonData`. Then we can set the data to `setQuery(jsonData)` to save the content of the response. I included the code `console.log(jsonData)` so that you can see the entire response from Big Data Cloud API. Additionally, since your UI only wanted to display the zipcode, I attached the code `console.log(jsonData.postcode)` so that your UI can only display the zip code rather than the entire JSON response.  
 
-Successful Response will look like this: 
+# Successful Response will look like this: 
 ```JS
 {
   "latitude": 32.81999969482422,
