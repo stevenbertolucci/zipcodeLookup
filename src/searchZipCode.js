@@ -40,7 +40,7 @@ export default function SearchZipCode() {
     }
       };
 
-      // Display the output for testing  
+  // Display the output for testing  
   return (
     <>
         <form className="form" onSubmit={searchZipCode}> 
@@ -48,15 +48,13 @@ export default function SearchZipCode() {
           {" "}
           City:
         </label>
-        <input
-          type="text"
+        
+        <button 
+          type="submit" 
           name="thecity"
-          className="input"
-          placeholder={`"Type in the City"`}
+          className="button"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type="submit" className="button">
+          onClick={(e) => setQuery(e.target.value)}>
           Search
         </button>
       </form>
