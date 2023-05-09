@@ -17,10 +17,11 @@ export default function SearchZipCode() {
     async function getLocation() {
         const response = await fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en")
         const jsonData = await response.json()
+        console.log("Data received!")
         setQuery(jsonData)
         console.log(jsonData)
         console.log(jsonData.postcode)
-        console.log("Data received!")
+        
     }
       };
 
