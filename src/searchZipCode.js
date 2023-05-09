@@ -11,25 +11,8 @@ export default function SearchZipCode() {
     const searchZipCode = async (e) => {
         e.preventDefault();
         console.log("Submitting the Form");
-        setQuery(e.target.thecity)
-
-        // Displays city info
-        getLocation({city: `${query}`})
-        .then((jsonResult => {
-            console.log('Asynchronous "then" result:', jsonResult);
-        })
-        .catch(function(error) {
-            console.error('Asynchronous "then" error:', error);
-        }));
-
-        (async function() {
-            try {
-                var jsonResult = await getLocation({city: `${query}`});
-                console.log('Asynchronous "await" result:', jsonResult);
-            } catch (error) {
-                console.error('Asynchronous "await" error:', error);
-        }
-    })();
+        getLocation()
+        
 
     async function getLocation() {
         const response = await fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en")
@@ -37,6 +20,7 @@ export default function SearchZipCode() {
         setQuery(jsonData)
         console.log(jsonData)
         console.log(jsonData.postcode)
+        console.log("Data received!")
     }
       };
 
